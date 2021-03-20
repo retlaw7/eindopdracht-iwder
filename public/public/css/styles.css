@@ -1,0 +1,136 @@
+@font-face {
+   font-family: 'Neuropol';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Neuropol'), url('NEUROPOL.woff') format('woff');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body{
+    font-family: Neuropol, sans-serif;
+    font-size: 18px;
+    height: 100%;
+    margin: 0px;
+    scroll-snap-type: y mandatory;
+}
+
+.menubtn{
+    background-color: transparent;
+    border: none;
+    color:  #FF8300;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.menu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.69s;
+    padding-top: 60px;
+}
+
+.menu a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #FF8300;
+}
+
+.menu .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.full-height{
+    height: 100%;
+    scroll-snap-align: start;
+}
+
+.header{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/backdrop.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.what{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/gameplay.png')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header h1{
+    font-size: 50px;
+    color: white;
+}
+
+.trailer {
+    position: relative;
+    background-color: #FF8300;
+    border: none;
+    font-family: Neuropol;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.trailer:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 200%;
+  padding-left: 250%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.trailer:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}

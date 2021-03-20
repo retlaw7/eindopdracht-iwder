@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>SSX 3</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <article class="menu" id="menu">
+            <a href= "javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a  href="index.html">Home</a>
+            <a href="index.html">Shop</a>
+            <a href="index.html">Contact</a>
+        </article>
+        <a  href= "javascript:void(0)" style="font-size:30px; cursor:pointer" onclick="openNav()" class="menubtn">&#9776;</a>
+        <article class="header full-height">
+            <figure>
+                <img src="media/logo.png" alt="logo">
+            </figure>
+            <button type="button" name="button" onclick="window.open('https://www.youtube.com/watch?v=t9wYu3lorFc')" class="trailer">Play Trailer</button>
+        </article>
+        <article class="what full-height">
+            <h2>What is SSX 3?</h2>
+        </article>
+        <article class="gameplay full-height">
+            <h2>Gameplay</h2>
+        </article>
+        <article class="history full-height">
+            <h2>History</h2>
+        </article>
+        <script>
+            function openNav() {
+              document.getElementById("menu").style.width = "250px";
+            }
+
+            function closeNav() {
+              document.getElementById("menu").style.width = "0";
+            }
+        </script>
+    </body>
+</html>
