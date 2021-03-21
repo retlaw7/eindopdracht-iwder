@@ -4,15 +4,17 @@
         <meta charset="utf-8">
         <title>SSX 3</title>
         <link rel="stylesheet" href="css/styles.css">
+        <script type="text/javascript" src="js/index.js"></script>
+        <link rel="icon" type="image/png" href="media/logo.png"/>
     </head>
     <body>
         <article class="menu" id="menu">
-            <a href= "javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href= "javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
             <a  href="index.html">Home</a>
             <a href="index.html">Shop</a>
             <a href="index.html">Contact</a>
         </article>
-        <a  href= "javascript:void(0)" style="font-size:30px; cursor:pointer" onclick="openNav()" class="menubtn">&#9776;</a>
+        <a style="font-size:30px; cursor:pointer" class="menubtn" id="openbtn">&#9776;</a>
         <article class="header full-height">
             <div class="headersec fade-in">
                 <figure id="logo">
@@ -57,14 +59,9 @@
                 of all time.</p>
             </div>
         </article>
-        <script>
-            function openNav() {
-              document.getElementById("menu").style.width = "250px";
-            }
-
-            function closeNav() {
-              document.getElementById("menu").style.width = "0";
-            }
-        </script>
+        <footer>
+            <p>Gemaakt door Walter Simons</p>
+            <p><a class="ssx"href="mailto:s1126950@student.hsleiden.nl">s1126950@student.hsleiden.nl</a></p>
+        </footer>
     </body>
 </html>

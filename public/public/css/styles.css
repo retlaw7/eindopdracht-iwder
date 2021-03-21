@@ -68,6 +68,14 @@ html, body{
     scroll-snap-align: start;
 }
 
+footer{
+    scroll-snap-align: start;
+    color:white;
+    background-color: black;
+    text-align: center;
+    padding:5%;
+}
+
 .header{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/backdrop.jpg')no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -126,7 +134,7 @@ html, body{
 
 .content{
     width: 50%;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
     text-align: center;
     background-color: #00000090;
@@ -159,15 +167,19 @@ animation: fadeIn ease 2s;
     background-color: #FF8300;
     border: none;
     font-family: Neuropol;
-    font-size: 20px;
+    font-size: 30px;
     color: #FFFFFF;
     padding: 20px;
-    width: 200px;
+    width: 250px;
     text-align: center;
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
+}
+
+.trailer:hover{
+    background-color: #ffa84d;
 }
 
 .trailer:after {
