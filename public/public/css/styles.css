@@ -10,7 +10,7 @@ html {
 }
 
 html, body{
-    font-family: Neuropol, sans-serif;
+    font-family: Neuropol, sans-serif !important;
     font-size: 18px;
     height: 100%;
     margin: 0px;
@@ -120,6 +120,35 @@ html, body{
     flex-direction: column;
 }
 
+.content h2{
+    color: #FF8300;
+}
+
+.content{
+    width: 50%;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: #00000090;
+    padding : 2%;
+}
+
+.headersec{
+    width: 75%;
+    text-align: center;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.fade-in {
+animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
 .header h1{
     font-size: 50px;
     color: white;
@@ -151,7 +180,7 @@ html, body{
   margin-left: -20px !important;
   margin-top: -120%;
   opacity: 0;
-  transition: all 0.8s
+  transition: all 1s;
 }
 
 .trailer:active:after {
@@ -159,4 +188,36 @@ html, body{
   margin: 0;
   opacity: 1;
   transition: 0s
+}
+
+.ssx{
+    background:none;
+    color:#FF8300;
+}
+
+@media only screen and (max-width: 1080px) {
+    .content{
+          width: 75%;
+          font-size: 35px;
+          line-height: 40px;
+    }
+
+    .headersec{
+        text-align: center;
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .trailer{
+        font-size: 40px;
+        width: 400px;
+    }
+
+    .menubtn{
+        height: 100px;
+        font-size: 75px !important;
+    }
+    .menu a{
+        font-size: 45px !important;
+    }
 }
