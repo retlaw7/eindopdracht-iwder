@@ -24,6 +24,15 @@ body{
     background-size: cover;
 }
 
+.fade-in {
+    animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
 .menubtn{
     padding-left: 10px;
     background-color: transparent;
@@ -236,8 +245,8 @@ footer{
     width: 90%;
     margin-top: 1%;
     margin-bottom: 1%;
-    border-radius: 5px;
-    border: none;
+    border: 2px solid black;
+
 }
 .modalForm input:not(.submit):hover{
     background-color: #ffa84d;
