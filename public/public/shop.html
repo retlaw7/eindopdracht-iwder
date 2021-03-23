@@ -17,30 +17,46 @@
         <a style="font-size:30px; cursor:pointer" class="menubtn" id="openbtn">&#9776;</a>
         <article class="header">
             <h1>SHOP</h1>
+            <p>Only the best <mark class="ssx">SSX</mark> merch here!</p>
         </article>
         <main class="grid-container">
             <article class="grid-item">
                 <figure>
                     <img src="media/t-shirt.png" alt="shirt">
                 </figure>
-                <h2>T-shirt</h2>
-                <button type="button" name="button" class="purchase">Purchase now</button>
+                <h2 class="ssx">T-shirt</h2>
+                <h3>€25,-</h3>
+                <button type="button" name="button" class="purchase modalBtn"  id="modalBtn">Purchase now</button>
             </article>
             <article class="grid-item">
                 <figure>
                     <img src="media/snapback.png" alt="snapback">
                 </figure>
-                <h2>Snapback</h2>
-                <button type="button" name="button" class="purchase">Purchase now</button>
+                <h2 class="ssx">Snapback</h2>
+                <h3>€25,-</h3>
+                <button type="button" name="button" class="purchase modalBtn">Purchase now</button>
             </article>
             <article class="grid-item">
                 <figure>
                     <img src="media/gamecase.png" alt="game">
                 </figure>
-                <h2>The game</h2>
-                <button type="button" name="button" class="purchase">Purchase now</button>
+                <h2 class="ssx">The game</h2>
+                <h3>€10,-</h3>
+                <button type="button" name="button" class="purchase modalBtn">Purchase now</button>
             </article>
         </main>
+        <article id="storeModal" class="modal">
+            <section class="modal-content">
+                <a id="modalQuit">&times;</a>
+                <form class="modalForm">
+                    <input type="text" id="fname" placeholder="First name" required>
+                    <input type="text" id="lname" placeholder="Last name" required>
+                    <input type="email" id="email" placeholder="E-Mail" required>
+                    <input type="tel" id="tel" placeholder="Phone Number" required>
+                    <input type="submit" value="Submit" class="submit">
+                </form>
+            </section>
+        </article>
         <footer>
             <p>Made by Walter Simons</p>
             <p><a class="ssx" href="mailto:s1126950@student.hsleiden.nl">s1126950@student.hsleiden.nl</a></p>
