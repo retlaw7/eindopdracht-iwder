@@ -18,8 +18,6 @@ window.onload = () => {
     trailerbtn.addEventListener("click", trailer);
 
     function trailer() {
-                window.open(
-                  "https://youtu.be/t9wYu3lorFc", "_blank");
+        window.open("https://youtu.be/t9wYu3lorFc", "_blank");
     }
-
 }

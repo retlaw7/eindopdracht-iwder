@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <title>SSX 3</title>
         <link rel="stylesheet" href="css/shop.css">
         <script src="js/shop.js"></script>
@@ -12,7 +13,10 @@
             <a href= "javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
             <a  href="index.html">Home</a>
             <a href="shop.html">Shop</a>
-            <a href="index.html">Contact</a>
+            <a href="contact.html">Contact</a>
+        </article>
+        <article class="notify" id="notify">
+            <p id="notifyType" class=""></p>
         </article>
         <a style="font-size:30px; cursor:pointer" class="menubtn" id="openbtn">&#9776;</a>
         <article class="header fade-in">
@@ -20,40 +24,40 @@
             <p>Only the best <mark class="ssx">SSX</mark> merch here!</p>
         </article>
         <main class="grid-container fade-in">
-            <article class="grid-item">
+            <article class="grid-item" data-category="shirt">
                 <figure>
                     <img src="media/t-shirt.png" alt="shirt">
                 </figure>
                 <h2 class="ssx">T-shirt</h2>
-                <h3>€25,-</h3>
+                <p>€25,-</p>
                 <button type="button" name="button" class="purchase modalBtn"  id="modalBtn">Purchase now</button>
             </article>
-            <article class="grid-item">
+            <article class="grid-item" data-category="pet">
                 <figure>
                     <img src="media/snapback.png" alt="snapback">
                 </figure>
                 <h2 class="ssx">Snapback</h2>
-                <h3>€25,-</h3>
+                <p>€25,-</p>
                 <button type="button" name="button" class="purchase modalBtn">Purchase now</button>
             </article>
-            <article class="grid-item">
+            <article class="grid-item" data-category="game">
                 <figure>
                     <img src="media/gamecase.png" alt="game">
                 </figure>
                 <h2 class="ssx">The game</h2>
-                <h3>€10,-</h3>
+                <p>€10,-</p>
                 <button type="button" name="button" class="purchase modalBtn">Purchase now</button>
             </article>
         </main>
         <article id="storeModal" class="modal">
-            <section class="modal-content">
+            <section class="modal-content fade-in">
                 <a id="modalQuit">&times;</a>
-                <form class="modalForm">
+                <form class="modalForm" id="formstore">
                     <input type="text" id="fname" placeholder="First name" required>
                     <input type="text" id="lname" placeholder="Last name" required>
                     <input type="email" id="email" placeholder="E-Mail" required>
                     <input type="tel" id="tel" placeholder="Phone Number" required>
-                    <input type="submit" value="Submit" class="submit">
+                    <input type="submit" value="Submit" class="submit" id="submit">
                 </form>
             </section>
         </article>

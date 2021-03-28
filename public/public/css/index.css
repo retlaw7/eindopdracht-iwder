@@ -5,17 +5,29 @@
    src: local('Neuropol'), url('NEUROPOL.woff') format('woff');
 }
 
+@font-face {
+   font-family: 'Eurocine';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Eurocine'), url('eurocine-regular.otf') format('opentype');
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 html, body{
-    font-family: Neuropol, sans-serif !important;
+    font-family: Eurocine, sans-serif ;
     font-size: 18px;
     height: 100%;
     margin: 0px;
     scroll-snap-type: y mandatory;
 }
+
+h1,h2,h3{
+    font-family: Neuropol, sans-serif ;
+}
+
 
 .menubtn{
     padding-left: 10px;
@@ -154,8 +166,8 @@ footer{
 }
 
 @keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 .header h1{

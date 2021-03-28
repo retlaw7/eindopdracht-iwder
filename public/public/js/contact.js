@@ -5,29 +5,11 @@ window.onload = () => {
     const buyButtons = document.getElementsByClassName("modalBtn");
 
     for(var i = 0; i < buyButtons.length; i++){
-        buyButtons[i].addEventListener('click', modalOpen);
+        buyButtons[i].addEventListener('click',modalOpen);
     }
 
     openbtn.addEventListener("click",openNav);
     closebtn.addEventListener("click",closeNav);
-
-    var modal = document.getElementById("storeModal");
-    var modalOpen = document.getElementById("modalBtn");
-    var modalQuit = document.getElementById("modalQuit");
-
-    function modalOpen(){
-        modal.style.display = "block";
-    }
-
-    modalQuit.onclick = function(){
-        modal.style.display = "none";
-    }
-
-    window.onclick = function() {
-        if(event.target == modal){
-            modal.style.display = "none";
-        }
-    }
 
     function openNav() {
         document.getElementById("menu").style.width = "30%";
@@ -37,35 +19,21 @@ window.onload = () => {
         document.getElementById("menu").style.width = "0";
     }
 
-    function modalOpen(){
-        modal.style.display = "block";
-    }
-
-    modalQuit.onclick = function(){
-        modal.style.display = "none";
-    }
-
-    window.onclick = function() {
-        if(event.target == modal){
-            modal.style.display = "none";
-        }
-    }
-
     var popup = document.getElementById("notify");
     var popupType = document.getElementById("notifyType");
-    var form = document.getElementById("formstore");
-    function handleForm(event) { event.preventDefault(); }
+    var form = document.getElementById("contact");
+
     form.addEventListener('submit', handleForm);
     form.addEventListener('submit', submitted);
+    function handleForm(event) { event.preventDefault(); }
 
     function submitted(){
-        modal.style.display = "none";
         popup.classList.toggle("active");
         popupType.classList.toggle("success");
         setTimeout(function(){
         popup.classList.remove("active");
         popupType.classList.remove("success");
       },2000);
-
+      form.reset();
     }
 }
