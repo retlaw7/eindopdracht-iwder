@@ -13,4 +13,13 @@ window.onload = () => {
     function closeNav() {
       document.getElementById("menu").style.width = "0";
     }
+    
+    window.onclick = function() {
+        if(event.target == openbtn){
+            console.log("open menu");
+        } else if(event.target !=  menu){
+            console.log("sluit menu");
+            closeNav();
+        }
+    }
 }

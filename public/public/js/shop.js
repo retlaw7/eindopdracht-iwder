@@ -59,12 +59,18 @@ window.onload = () => {
         text3.style.display = "none";
     }
 
+    var menu = document.getElementById("menu");
+
     window.onclick = function() {
         if(event.target == modal){
             modal.style.display = "none";
             text1.style.display = "none";
             text2.style.display = "none";
             text3.style.display = "none";
+        }else if(event.target == openbtn){
+            console.log("open menu");
+        } else if(event.target !=  menu){
+            closeNav();
         }
     }
 

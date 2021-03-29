@@ -36,4 +36,13 @@ window.onload = () => {
       },2000);
       form.reset();
     }
+    
+    window.onclick = function() {
+        if(event.target == openbtn){
+            console.log("open menu");
+        } else if(event.target !=  menu){
+            console.log("sluit menu");
+            closeNav();
+        }
+    }
 }

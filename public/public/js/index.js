@@ -20,4 +20,13 @@ window.onload = () => {
     function trailer() {
         window.open("https://youtu.be/t9wYu3lorFc", "_blank");
     }
+
+    window.onclick = function() {
+        if(event.target == openbtn){
+            console.log("open menu");
+        } else if(event.target !=  menu){
+            console.log("sluit menu");
+            closeNav();
+        }
+    }
 }
