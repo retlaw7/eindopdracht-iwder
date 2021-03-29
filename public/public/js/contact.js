@@ -12,7 +12,7 @@ window.onload = () => {
     closebtn.addEventListener("click",closeNav);
 
     function openNav() {
-        document.getElementById("menu").style.width = "30%";
+        document.getElementById("menu").style.width = "100%";
     }
 
     function closeNav() {

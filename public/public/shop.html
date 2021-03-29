@@ -31,7 +31,7 @@
                 </figure>
                 <h2 class="ssx">T-shirt</h2>
                 <p>€25,-</p>
-                <button type="button" name="button" class="purchase modalBtn"  id="modalBtn">Purchase now</button>
+                <button type="button" name="button" class="purchase modalBtn"  id="t-shirtBtn">Purchase now</button>
             </article>
             <article class="grid-item" data-category="pet">
                 <figure>
@@ -39,7 +39,7 @@
                 </figure>
                 <h2 class="ssx">Snapback</h2>
                 <p>€25,-</p>
-                <button type="button" name="button" class="purchase modalBtn">Purchase now</button>
+                <button type="button" name="button" class="purchase modalBtn" id="capBtn">Purchase now</button>
             </article>
             <article class="grid-item" data-category="game">
                 <figure>
@@ -47,12 +47,15 @@
                 </figure>
                 <h2 class="ssx">The game</h2>
                 <p>€10,-</p>
-                <button type="button" name="button" class="purchase modalBtn">Purchase now</button>
+                <button type="button" name="button" class="purchase modalBtn" id="gameBtn">Purchase now</button>
             </article>
         </main>
         <article id="storeModal" class="modal">
             <section class="modal-content fade-in">
                 <a id="modalQuit">&times;</a>
+                <p class="item" id="shirtTxt">You are purchasing a T-shirt</p>
+                <p class="item" id="capTxt">You are purchasing a Snapback</p>
+                <p class="item" id="gameTxt">You are purchasing The Game</p>
                 <p>Fill in your information here:</p>
                 <form class="modalForm" id="formstore">
                     <input type="text" id="fname" placeholder="First name" required>

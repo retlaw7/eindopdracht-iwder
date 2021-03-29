@@ -45,6 +45,7 @@ h1,h2,h3{
 .menu{
     height: 100%;
     width: 0;
+    max-width: 15%;
     position: fixed;
     z-index: 1;
     top:0;
@@ -128,4 +129,10 @@ main{
 
 .list a:hover{
     color:#FF8300;
+}
+
+@media only screen and (max-width: 1080px) {
+    .menu{
+        max-width: 100%;
+    }
 }

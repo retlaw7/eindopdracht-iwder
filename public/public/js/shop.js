@@ -15,22 +15,33 @@ window.onload = () => {
     var modalOpen = document.getElementById("modalBtn");
     var modalQuit = document.getElementById("modalQuit");
 
-    function modalOpen(){
-        modal.style.display = "block";
+    var button1 = document.getElementById("t-shirtBtn");
+    var text1 = document.getElementById("shirtTxt");
+    var button2 = document.getElementById("capBtn");
+    var text2 = document.getElementById("capTxt");
+    var button3 = document.getElementById("gameBtn");
+    var text3 = document.getElementById("gameTxt");
+
+    var shoppingcart = document.getElementsByClassName("item");
+
+    button1.addEventListener("click", shirtOpen);
+    button2.addEventListener("click", capOpen);
+    button3.addEventListener("click", gameOpen);
+
+    function shirtOpen(){
+        text1.style.display = "block";
     }
 
-    modalQuit.onclick = function(){
-        modal.style.display = "none";
+    function capOpen(){
+        text2.style.display = "block";
     }
 
-    window.onclick = function() {
-        if(event.target == modal){
-            modal.style.display = "none";
-        }
+    function gameOpen(){
+        text3.style.display = "block";
     }
 
     function openNav() {
-        document.getElementById("menu").style.width = "30%";
+        document.getElementById("menu").style.width = "100%";
     }
 
     function closeNav() {
@@ -43,11 +54,17 @@ window.onload = () => {
 
     modalQuit.onclick = function(){
         modal.style.display = "none";
+        text1.style.display = "none";
+        text2.style.display = "none";
+        text3.style.display = "none";
     }
 
     window.onclick = function() {
         if(event.target == modal){
             modal.style.display = "none";
+            text1.style.display = "none";
+            text2.style.display = "none";
+            text3.style.display = "none";
         }
     }
 
@@ -67,6 +84,8 @@ window.onload = () => {
         popupType.classList.remove("success");
       },2000);
       form.reset();
-
+      text1.style.display = "none";
+      text2.style.display = "none";
+      text3.style.display = "none";
     }
 }
