@@ -141,6 +141,19 @@ footer{
     flex-direction: column;
 }
 
+.special{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/halfpipe.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .content h2{
     color: #FF8300;
 }
@@ -175,6 +188,10 @@ footer{
     color: white;
 }
 
+.header img{
+    object-fit: contain;
+}
+
 .trailer {
     position: relative;
     background-color: #FF8300;
@@ -189,6 +206,7 @@ footer{
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
+    clip-path: polygon(0 70%, 0 0, 100% 0, 100% 100%, 10% 100%);
 }
 
 .trailer:hover{

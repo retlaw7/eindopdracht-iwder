@@ -66,6 +66,7 @@ window.onload = () => {
         popup.classList.remove("active");
         popupType.classList.remove("success");
       },2000);
+      form.reset();
 
     }
 }

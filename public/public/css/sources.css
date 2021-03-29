@@ -1,0 +1,131 @@
+@font-face {
+   font-family: 'Neuropol';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Neuropol'), url('NEUROPOL.woff') format('woff');
+}
+
+@font-face {
+   font-family: 'Eurocine';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Eurocine'), url('eurocine-regular.otf') format('opentype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body{
+    font-family: Eurocine, sans-serif ;
+    font-size: 18px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+
+h1,h2,h3{
+    font-family: Neuropol, sans-serif ;
+}
+
+.menubtn{
+    padding-left: 10px;
+    background-color: transparent;
+    border: none;
+    color:  #FF8300;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    top: 0;
+}
+
+.menu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left: 0;
+    background-color: #1c5e6d;
+    overflow-x: hidden;
+    transition: 0.69s;
+    padding-top: 60px;
+}
+
+.menu a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #FF8300;
+}
+
+.menu .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+main{
+    width: 90%;
+    /* justify-content: center; */
+}
+
+footer{
+    scroll-snap-align: start;
+    color:white;
+    background-color: black;
+    text-align: center;
+    padding:5%;
+}
+
+.content h2{
+    color: #FF8300;
+}
+
+.content{
+    width: 50%;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    background-color: #00000090;
+    padding : 2%;
+}
+
+.fade-in {
+    animation: fadeIn ease 2s;
+}
+
+main{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.ssx{
+    background:none;
+    color:#FF8300;
+}
+
+.list a{
+    text-decoration: none;
+    color:#ffa84d;
+}
+
+.list a:hover{
+    color:#FF8300;
+}

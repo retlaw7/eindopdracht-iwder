@@ -140,7 +140,16 @@ footer{
     border-radius: 20%;
     margin-top: 1%;
     margin-bottom: 1%;
+    filter: blur(2px);
+    transition: 0.4s;
+    transform: scale(0.8);
 }
+
+.grid-item:hover{
+    filter: blur(0px);
+    transform: scale(1);
+}
+
 
 .grid-item, img{
     max-width: 90%
@@ -160,6 +169,7 @@ footer{
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
+    clip-path: polygon(0 70%, 0 0, 100% 0, 100% 100%, 10% 100%);
 }
 
 .purchase:hover{
