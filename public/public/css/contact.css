@@ -44,55 +44,6 @@ body{
 100% {opacity:1;}
 }
 
-.menubtn{
-    padding-left: 10px;
-    background-color: transparent;
-    border: none;
-    color:  #FF8300;
-    text-decoration: none;
-    overflow: hidden;
-    white-space: nowrap;
-    position: fixed;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    z-index:2;
-}
-
-.menu{
-    height: 100%;
-    width: 0;
-    max-width: 15%;
-    position: fixed;
-    z-index: 3;
-    top:0;
-    left: 0;
-    background-color: black;
-    overflow-x: hidden;
-    transition: 0.4s;
-    padding-top: 60px;
-}
-
-.menu a{
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-.menu a:hover{
-    color: #FF8300;
-}
-
-.menu .closebtn{
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
 .header{
     height: 35%;
     margin: 0px;
@@ -144,7 +95,7 @@ footer{
     font-size: 30px;
     color: #FFFFFF;
     padding: 15px;
-    margin: 5px;
+    margin-top: 10px;
     width: 200px;
     text-align: center;
     transition-duration: 0.4s;
@@ -168,6 +119,7 @@ footer{
     margin-bottom: 5%;
     background-color: #1c5e6d;
     border: 3px solid black;
+    padding: 2%;
 }
 
 .contactForm input:not(.submit){

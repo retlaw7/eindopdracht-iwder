@@ -38,7 +38,7 @@ h1,h2,h3{
     white-space: nowrap;
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: #1c5e6d;
     top: 0;
 }
 
@@ -76,10 +76,6 @@ h1,h2,h3{
     font-size: 36px;
     margin-left: 50px;
 }
-main{
-    width: 90%;
-    /* justify-content: center; */
-}
 
 footer{
     scroll-snap-align: start;
@@ -107,6 +103,7 @@ footer{
 }
 
 main{
+    width: 90%;
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
@@ -134,5 +131,8 @@ main{
 @media only screen and (max-width: 1080px) {
     .menu{
         max-width: 100%;
+    }
+    main{
+        margin-top: 10%;
     }
 }
