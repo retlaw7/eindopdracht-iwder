@@ -231,6 +231,7 @@ footer{
     margin-top: 1%;
     margin-bottom: 1%;
     border: 2px solid black;
+    transition: 0.2s;
 
 }
 .modalForm input:not(.submit):hover{

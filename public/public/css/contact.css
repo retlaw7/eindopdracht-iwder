@@ -120,6 +120,7 @@ footer{
     background-color: #1c5e6d;
     border: 3px solid black;
     padding: 2%;
+
 }
 
 .contactForm input:not(.submit){
@@ -129,6 +130,7 @@ footer{
     margin-top: 2%;
     margin-bottom: 2%;
     border: 2px solid black;
+    transition: 0.2s;
 }
 
 .contactForm input:not(.submit):hover{
@@ -139,6 +141,11 @@ footer{
     width:90%;
     border: 2px solid black;
     font-family: Eurocine;
+    transition: 0.2s;
+}
+
+.contactForm textarea:hover{
+    background-color: #ffa84d;
 }
 
 .notify{

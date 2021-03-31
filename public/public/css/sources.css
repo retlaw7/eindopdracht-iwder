@@ -28,6 +28,10 @@ h1,h2,h3{
     font-family: Neuropol, sans-serif ;
 }
 
+.home{
+    margin-top:5px;
+}
+
 .menubtn{
     padding-left: 10px;
     background-color: transparent;
@@ -100,6 +104,12 @@ footer{
 
 .fade-in {
     animation: fadeIn ease 2s;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+
 }
 
 main{
