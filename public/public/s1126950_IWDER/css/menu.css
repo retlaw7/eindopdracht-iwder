@@ -1,0 +1,56 @@
+.menubtn{
+    padding-left: 10px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    border: none;
+    color:  #FF8300;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index:2;
+}
+
+.menu{
+    height: 100%;
+    width: 0;
+    max-width: 15%;
+    position: fixed;
+    z-index: 3;
+    top:0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.69s;
+    padding-top: 60px;
+}
+
+.menu a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #FF8300;
+}
+
+.menu .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .menu{
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,216 @@
+@font-face {
+   font-family: 'Neuropol';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Neuropol'), url('NEUROPOL.woff') format('woff');
+}
+
+@font-face {
+   font-family: 'Eurocine';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Eurocine'), url('eurocine-regular.otf') format('opentype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body{
+    font-family: Eurocine, sans-serif ;
+    font-size: 18px;
+    height: 100%;
+    margin: 0px;
+    scroll-snap-type: y mandatory;
+}
+
+h1,h2,h3{
+    font-family: Neuropol, sans-serif ;
+}
+
+.full-height{
+    height: 100%;
+    scroll-snap-align: start;
+}
+
+footer{
+    scroll-snap-align: start;
+    color:white;
+    background-color: black;
+    text-align: center;
+    padding:5%;
+}
+
+.header{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/backdrop.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.what{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/gameplay.png')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.history{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/history.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gameplay{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/gameplay2.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.special{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/halfpipe.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content h2{
+    color: #FF8300;
+}
+
+.content{
+    width: 50%;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    background-color: #00000090;
+    padding : 2%;
+}
+
+.headersec{
+    width: 75%;
+    text-align: center;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.fade-in {
+    animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.header h1{
+    font-size: 50px;
+    color: white;
+}
+
+.header img{
+    max-width: 100%;
+}
+
+.trailer {
+    position: relative;
+    background-color: #FF8300;
+    border: none;
+    font-family: Neuropol;
+    font-size: 30px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    clip-path: polygon(0 70%, 0 0, 100% 0, 100% 100%, 10% 100%);
+}
+
+.trailer:hover{
+    background-color: #ffa84d;
+}
+
+.trailer:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 200%;
+  padding-left: 250%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.trailer:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.ssx{
+    background:none;
+    color:#FF8300;
+}
+
+@media only screen and (max-width: 1080px) {
+    .content{
+        width: 90%;
+    }
+
+    .headersec{
+        text-align: center;
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .menubtn{
+        height: 40px;
+    }
+
+    .menu{
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .content{
+        font-size:18px;
+    }
+}

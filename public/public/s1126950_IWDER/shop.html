@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>SSX 3</title>
+        <link rel="stylesheet" href="css/shop.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <script src="js/shop.js"></script>
+        <link rel="icon" type="image/png" href="media/logo.png"/>
+    </head>
+    <body>
+        <nav class="menu" id="menu">
+            <a href= "javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+            <a  href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+            <a href="sources.html">Sources</a>
+        </nav>
+        <article class="notify" id="notify">
+            <p id="notifyType" class=""></p>
+        </article>
+        <a style="font-size:30px; cursor:pointer" class="menubtn" id="openbtn">&#9776;</a>
+        <article class="header fade-in">
+            <h1>SHOP</h1>
+            <p>Only the best <mark class="ssx">SSX</mark> merch here!</p>
+        </article>
+        <main class="grid-container fade-in">
+            <article class="grid-item" data-category="shirt">
+                <figure>
+                    <img src="media/t-shirt.png" alt="shirt">
+                </figure>
+                <h2 class="ssx">T-shirt</h2>
+                <p>€25,-</p>
+                <button type="button" name="button" class="purchase modalBtn"  id="t-shirtBtn">Purchase now</button>
+            </article>
+            <article class="grid-item" data-category="pet">
+                <figure>
+                    <img src="media/snapback.png" alt="snapback">
+                </figure>
+                <h2 class="ssx">Snapback</h2>
+                <p>€25,-</p>
+                <button type="button" name="button" class="purchase modalBtn" id="capBtn">Purchase now</button>
+            </article>
+            <article class="grid-item" data-category="game">
+                <figure>
+                    <img src="media/gamecase.png" alt="game">
+                </figure>
+                <h2 class="ssx">The game</h2>
+                <p>€10,-</p>
+                <button type="button" name="button" class="purchase modalBtn" id="gameBtn">Purchase now</button>
+            </article>
+        </main>
+        <article id="storeModal" class="modal">
+            <section class="modal-content fade-in">
+                <a id="modalQuit">&times;</a>
+                <p class="item" id="shirtTxt">You are purchasing a T-shirt</p>
+                <p class="item" id="capTxt">You are purchasing a Snapback</p>
+                <p class="item" id="gameTxt">You are purchasing The Game</p>
+                <p>Fill in your information here:</p>
+                <form class="modalForm" id="formstore">
+                    <input type="text" id="fname" placeholder="First name" required>
+                    <input type="text" id="lname" placeholder="Last name" required>
+                    <input type="email" id="email" placeholder="E-Mail" required>
+                    <input type="tel" id="tel" placeholder="Phone Number" required>
+                    <input type="submit" value="Submit" class="submit" id="submit">
+                </form>
+            </section>
+        </article>
+        <footer>
+            <p>Made by Walter Simons</p>
+            <p><a class="ssx" href="mailto:s1126950@student.hsleiden.nl">s1126950@student.hsleiden.nl</a></p>
+        </footer>
+    </body>
+</html>

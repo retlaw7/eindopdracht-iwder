@@ -108,7 +108,7 @@ footer{
 
 section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
 }
 
@@ -129,12 +129,12 @@ main{
     color:#FF8300;
 }
 
-.list a{
+a{
     text-decoration: none;
     color:#ffa84d;
 }
 
-.list a:hover{
+a:hover{
     color:#FF8300;
 }
 

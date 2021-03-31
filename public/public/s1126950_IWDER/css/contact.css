@@ -1,0 +1,196 @@
+@font-face {
+   font-family: 'Neuropol';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Neuropol'), url('NEUROPOL.woff') format('woff');
+}
+
+@font-face {
+   font-family: 'Eurocine';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Eurocine'), url('eurocine-regular.otf') format('opentype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body{
+    font-family: Eurocine, sans-serif !important;
+    font-size: 18px;
+    height: 100%;
+    margin: 0px;
+}
+
+h1,h2,h3{
+    font-family: Neuropol, sans-serif ;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/backdrop.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.fade-in {
+    animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+.header{
+    height: 35%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.full-height{
+    height: 100%;
+    scroll-snap-align: start;
+}
+
+.header{
+    color:white;
+    font-size: 20px;
+}
+
+.header h1{
+    color: #FF8300;
+    font-size: 35px;
+}
+
+footer{
+    scroll-snap-align: start;
+    color:white;
+    background-color: black;
+    text-align: center;
+    padding:5%;
+}
+
+.trailer:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.ssx{
+    background:none;
+    color:#FF8300;
+}
+
+.submit{
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    font-family: Neuropol;
+    font-size: 30px;
+    color: #FFFFFF;
+    padding: 15px;
+    margin-top: 10px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border:none;
+    clip-path: polygon(0 70%, 0 0, 100% 0, 100% 100%, 10% 100%);
+    transition: 0.5s;
+}
+
+.submit:hover{
+    background-color: black;
+}
+
+.contactForm{
+    text-align: center;
+    margin:auto;
+    height: 90%;
+    width: 60%;
+    margin-bottom: 5%;
+    background-color: #1c5e6d;
+    border: 3px solid black;
+    padding: 2%;
+
+}
+
+.contactForm input:not(.submit){
+    font-family: Neuropol;
+    font-size: 25px;
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 2px solid black;
+    transition: 0.2s;
+}
+
+.contactForm input:not(.submit):hover{
+    background-color: #ffa84d;
+}
+
+.contactForm textarea{
+    width:90%;
+    border: 2px solid black;
+    font-family: Eurocine;
+    transition: 0.2s;
+}
+
+.contactForm textarea:hover{
+    background-color: #ffa84d;
+}
+
+.notify{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:0;
+    box-sizing:border-box;
+    color:white;
+    text-align:center;
+    background:#19A200;
+    overflow:hidden;
+    box-sizing:border-box;
+    transition:height .2s;
+    z-index: 4;
+}
+
+#notifyType:before{
+  display:block;
+  margin-top:15px;
+}
+
+.active{
+  height:50px;
+}
+
+.success:before{
+  Content:"Your message has been sent.";
+}
+
+@media only screen and (max-width: 1080px) {
+    .header{
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .content{
+        width: 75%;
+    }
+
+    .contactForm{
+        width: 80%;
+    }
+
+    .menu{
+        max-width: 100%;
+    }
+}
